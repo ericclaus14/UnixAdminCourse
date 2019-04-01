@@ -1,0 +1,13 @@
+.\" Manpage for listFiles.
+.\" Created by Eric Claus ericclaus@southern.edu.
+.TH listFiles 8 "13 Feb 2017" "version 1.0"
+.SH NAME
+listFiles \- List files and perform incremental backup
+.SH SYNOPSIS
+listFiles <source_dir> <dest_dir>
+.SH DESCRIPTION
+listFiles displays the contents of a directory (source_dir) and then performs backup to a destination directory (dest_dir). Files are only backedup only if the file in the source directory is newer than the file in the destination directory.
+.SH OPTIONS
+listFiles takes a source directory and then a destination directory as parameters.
+.SH EXAMPLE
+Example: listFiles /home /backup  
